@@ -1,0 +1,78 @@
+body
+{
+	font-family: 'Amatic SC', cursive;
+	text-align:center;
+	background-color:tan;
+	color:#cc6500;
+}
+h1
+{
+	font-size:70px;
+}
+#londonImg
+{
+	height:450px;
+	width:490px;
+}
+button
+{
+	font-size:50px;
+	font-family: 'Amatic SC', cursive;
+	color:#cc6500;
+	background-color:tan;
+	border:none;
+	margin-top:50px;
+}
+#calc
+{
+	margin:0 auto;
+	font-size:50px;
+	border:solid;
+	cursor:pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background-color:tan;
+}
+#calc td
+{
+	padding:20px;
+}
+#nav
+{
+	margin: 0 auto;
+	font-size:50px;
+	border:solid;
+	border-color:#cc6500;
+	padding:20px;
+	padding-left:100px;
+	padding-right:100px;
+	background-color:tan;
+}
+.rightNavItem
+{
+	padding-left:100px;
+}
+#wrapper
+{
+	width:1100px;
+	background-color:lightyellow;
+	margin: 0 auto;
+	padding: 20px;
+	height:800px;
+}
+a
+{
+	text-decoration:none;
+	color:inherit;
+}
+h3
+{
+	position:absolute;
+	bottom:50px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
