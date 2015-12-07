@@ -1,22 +1,27 @@
-function helloWorld() {
+function helloWorld()
+{
 	alert("Hello World!")
 }
-function add(number) {
-	var num1
-	localStorage.setItem("num1", number);
-	var someVarName = localStorage.getItem("someVarName");
-	if (num1==null){
-		console.log("num 1 is null")
+
+var num1 = null
+var num2 = null
+var solution = null
+
+function add(number)
+{
+	if (num1 == null)
+	{
 		num1 = number
-		console.log("num 1 is now " + num1)
+		console.log(num1 + " +")
 	}
 	else
 	{
 		num2 = number
 		console.log(num2)
+		solution = num1 + num2
+		console.log("= " + solution)
+		num1 = null
+		num2 = null
+		solution = null
 	}	
-	if (num2 !== null){
-		alert(num1 + num2)
-	}
 }
-add()
