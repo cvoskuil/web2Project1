@@ -3,25 +3,53 @@ function helloWorld()
 	alert("Hello World!")
 }
 
-var num1 = null
+var num1 = 0
 var num2 = null
 var solution = null
+var operator = null
 
-function add(number)
+function c()
 {
-	if (num1 == null)
+	num1 = 0
+	num2 = null
+	solution = null
+	operator = null
+	document.getElementById("result").innerHTML = "0"
+}
+
+function math(number)
+{
+	if (!isNaN(number) && operator == null)
 	{
 		num1 = number
-		console.log(num1 + " +")
+		document.getElementById("result").innerHTML = num1
 	}
-	else
+	if (number == "+" || number == "-")
+	{
+		operator = number
+		document.getElementById("result").innerHTML = num1 + " " + operator
+	}
+	if (operator !== null && num1 !== null && !isNaN(number))
 	{
 		num2 = number
-		console.log(num2)
-		solution = num1 + num2
-		console.log("= " + solution)
-		num1 = null
-		num2 = null
-		solution = null
-	}	
+		document.getElementById("result").innerHTML = num2
+		if (operator == "+")
+		{
+			solution = num1 + num2
+			document.getElementById("result").innerHTML = solution
+			num1 = solution
+			num2 = null
+			solution = null
+			operator = null
+		}
+		if (operator == "-") 
+		{
+			solution = num1 - num2
+			document.getElementById("result").innerHTML = solution
+			num1 = solution
+			num2 = null
+			solution = null
+			operator = null
+		}
+	}
 }

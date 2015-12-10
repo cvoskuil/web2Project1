@@ -13,34 +13,35 @@
 				<tr>
 					<td><a href="index.html">Page 1</a></td>
 					<td class="rightNavItem"><a href="page2.html">Page 2</a></td>
-					<td class="rightNavItem"><a href="#">Page 3</a></td>
+					<td class="rightNavItem"><a href="#">Calculator</a></td>
 				</tr>
 			</table>
-			<h1>Page 3</h1>
-			<table id="calc" align="left">
+
+			<div id="result">0</div>
+			<table id="calc">
 				<tr>
-					<td onclick="add(7)">7</td>
-					<td onclick="add(8)">8</td>
-					<td onclick="add(9)">9</td>
+					<td onclick="math(7)">7</td>
+					<td onclick="math(8)">8</td>
+					<td onclick="math(9)">9</td>
+					<td onclick="c()"><b>C</b></td>
 				</tr>
 				<tr>
-					<td onclick="add(4)">4</td>
-					<td onclick="add(5)">5</td>
-					<td onclick="add(6)">6</td>
+					<td onclick="math(4)">4</td>
+					<td onclick="math(5)">5</td>
+					<td onclick="math(6)">6</td>
 				</tr>
 				<tr>
-					<td onclick="add(1)">1</td>
-					<td onclick="add(2)">2</td>
-					<td onclick="add(3)">3</td>
+					<td onclick="math(1)">1</td>
+					<td onclick="math(2)">2</td>
+					<td onclick="math(3)">3</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td onclick="add(0)">0</td>
-					<td></td>
+					<td onclick="math('+')">+</td>
+					<td onclick="math(0)">0</td>
+					<td onclick="math('-')">-</td>
 				</tr>
 			</table>
-			<div id="result">999</div>
-			<h3>&copy; Connor Voskuil 2015</h3>
 		</div>
+		<h3>&copy; Connor Voskuil 2015</h3>
 	</body>
 </html>
